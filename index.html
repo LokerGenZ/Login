@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>LokerGenZ</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signupForm" action="#"> <!-- action tidak diisi karena tidak ada pengiriman form, ini hanya untuk tampilan -->
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>atau gunakan email Anda untuk pendaftaran</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <h6>login disini sebagai perusahaan</h6>
+                <button type="submit" id="signUpBtn">Perusahaan</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="signinForm" action="#"> <!-- action tidak diisi karena tidak ada pengiriman form, ini hanya untuk tampilan -->
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>atau gunakan email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <h6>login disini sebagai pekerja</h6>
+                <button type="submit" id="signInBtn">Pekerja</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Masukkan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                    <button class="hidden" id="login">daftar sebagai pekerja</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome to LokerGenZ!</h1>
+                    <p>Daftarkan dengan detail pribadi Anda untuk menggunakan semua fitur situs</p>
+                    <button class="hidden" id="register">daftar sebagai perusahaan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
